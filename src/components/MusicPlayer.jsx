@@ -253,8 +253,6 @@
 
 // export default MusicPlayer;
 
-
-
 import { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import ReactPlayer from "react-player";
@@ -407,10 +405,10 @@ const MusicPlayer = () => {
 								{artistName}
 							</h2>
 						</div>
-            <div className="flex gap-2">
-            <i className="fa-solid fa-star bg-gray-400 rounded-full p-2 text-white"></i>
-            <i className="fa-solid fa-ellipsis bg-gray-400 rounded-full p-2"></i>
-            </div>
+						<div className="flex gap-2">
+							<i className="fa-regular fa-star bg-gray-400 rounded-full p-2 text-white"></i>
+							<i className="fa-solid fa-ellipsis bg-gray-400 rounded-full p-2"></i>
+						</div>
 					</div>
 
 					{/* Progress Bar */}
