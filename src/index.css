@@ -2,6 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
+.glow {
+  text-shadow: 0 0 3px #ffffff;
+}
+
+/* @keyframes random-wave {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 10% 20%;
+  }
+  50% {
+    background-position: 20% 40%;
+  }
+  75% {
+    background-position: 30% 60%;
+  }
+  100% {
+    background-position: 40% 80%;
+  }
+}
+
+.bg-random-wave {
+  animation: random-wave 30s ease-in-out infinite;
+  background-size: 200% 250%;
+} */
+
+@keyframes random-wave {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 10% 20%;
+  }
+  50% {
+    background-position: 20% 40%;
+  }
+  75% {
+    background-position: 30% 60%;
+  }
+  100% {
+    background-position: 40% 80%;
+  }
+}
+
+.bg-random-wave {
+  animation: random-wave 30s ease-in-out infinite alternate;
+  background-size: 300% 300%; /* Slightly larger for smoother transitions */
+  background-repeat: no-repeat; /* Prevent repeating patterns */
+}
+
+
+.bg-wave {
+  animation: wave-motion 20s ease-in-out infinite;
+  background-size: 300% 300%;
+}
+
 /* Regular Font */
 @font-face {
   font-family: 'SF Pro';
